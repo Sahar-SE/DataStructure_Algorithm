@@ -19,6 +19,26 @@
 
 };
 
+
+var plusOne_2  = function(digits) {
+
+        string=''
+        arr=[]
+       for (let i =0; i < digits.length+1; i++) {
+           string+=digits[i]
+       }
+     
+      number=parseInt(string)+1
+       number=number.toString()
+       for (let i =0; i < number.length; i++) {
+           arr.push(parseInt(number[i]))
+       }
+       return arr
+   };
+;
+
+
+console.log(plusOne_2([1,9,9,9]))
 console.log(plusOne([1,9,9,9]));
 
 
